@@ -22,9 +22,8 @@ const DisableItems = () => {
           name="FirstName"
           defaultValue="Bob"
           placeholder="Hero name"
+          style={{ marginBottom: 15 }}
         />
-        <br />
-        <br />
         <label>Your hero last name:</label>
         <input
           disabled
@@ -32,9 +31,8 @@ const DisableItems = () => {
           name="FirstName"
           defaultValue="The Destroyer"
           placeholder="Hero last name"
+          style={{ marginBottom: 15 }}
         />
-        <br />
-        <br />
         <label>Your hero bio:</label>
         <textarea
           disabled
@@ -49,31 +47,32 @@ const DisableItems = () => {
         <Slider className="golden" disabled />
         <h1>Icons</h1>
         <div className="rpgui-center">
-          <div className="rpgui-icon rpgui-disabled sword" />
-          <div className="rpgui-icon rpgui-disabled shield" />
-          <div className="rpgui-icon rpgui-disabled exclamation" />
-          <br />
-          <br />
-          <div className="rpgui-icon rpgui-disabled potion-red" />
-          <div className="rpgui-icon rpgui-disabled potion-green" />
-          <div className="rpgui-icon rpgui-disabled potion-blue" />
-          <br />
-          <br />
-          <div className="rpgui-icon rpgui-disabled weapon-slot" />
-          <div className="rpgui-icon rpgui-disabled shield-slot" />
-          <div className="rpgui-icon rpgui-disabled armor-slot" />
-          <br />
-          <br />
-          <div className="rpgui-icon rpgui-disabled helmet-slot" />
-          <div className="rpgui-icon rpgui-disabled ring-slot" />
-          <div className="rpgui-icon rpgui-disabled potion-slot" />
-          <br />
-          <br />
-          <div className="rpgui-icon rpgui-disabled magic-slot" />
-          <div className="rpgui-icon rpgui-disabled shoes-slot" />
-          <div className="rpgui-icon rpgui-disabled empty-slot" />
-          <br />
-          <br />
+          <div style={{ marginBottom: 15 }}>
+            <div className="rpgui-icon rpgui-disabled sword" />
+            <div className="rpgui-icon rpgui-disabled shield" />
+            <div className="rpgui-icon rpgui-disabled exclamation" />
+          </div>
+          <div style={{ marginBottom: 15 }}>
+            <div className="rpgui-icon rpgui-disabled potion-red" />
+            <div className="rpgui-icon rpgui-disabled potion-green" />
+            <div className="rpgui-icon rpgui-disabled potion-blue" />
+          </div>
+
+          <div style={{ marginBottom: 15 }}>
+            <div className="rpgui-icon rpgui-disabled weapon-slot" />
+            <div className="rpgui-icon rpgui-disabled shield-slot" />
+            <div className="rpgui-icon rpgui-disabled armor-slot" />
+          </div>
+          <div style={{ marginBottom: 15 }}>
+            <div className="rpgui-icon rpgui-disabled helmet-slot" />
+            <div className="rpgui-icon rpgui-disabled ring-slot" />
+            <div className="rpgui-icon rpgui-disabled potion-slot" />
+          </div>
+          <div style={{ marginBottom: 15 }}>
+            <div className="rpgui-icon rpgui-disabled magic-slot" />
+            <div className="rpgui-icon rpgui-disabled shoes-slot" />
+            <div className="rpgui-icon rpgui-disabled empty-slot" />
+          </div>
         </div>
       </div>
       <div style={{ width: "42%", float: "right" }}>
@@ -82,67 +81,65 @@ const DisableItems = () => {
           disabled
           className="rpgui-button"
           type="button"
-          style={{ width: "100%" }}
+          style={{ width: "100%", marginBottom: 15 }}
         >
           <p>Button</p>
         </button>
-        <br />
-        <br />
         <button
           disabled
           className="rpgui-button golden"
           type="button"
-          style={{ width: "100%" }}
+          style={{ width: "100%", marginBottom: 15 }}
         >
           <p>Gold Button</p>
         </button>
-        <br />
-        <br />
         <h1>Radio/Check</h1>
-        <br />
         <div>
-          <input
-            disabled
-            className="rpgui-radio"
-            defaultChecked
-            type="radio"
-            name="sex"
-            defaultValue="male"
-          />
-          <label>Male</label>
-          <br />
-          <input
-            disabled
-            className="rpgui-radio"
-            type="radio"
-            name="sex"
-            defaultValue="female"
-          />
-          <label>Female</label>
-          <br />
+          <div>
+            <input
+              disabled
+              className="rpgui-radio"
+              defaultChecked
+              type="radio"
+              name="sex"
+              defaultValue="male"
+            />
+            <label>Male</label>
+          </div>
+          <div>
+            <input
+              disabled
+              className="rpgui-radio"
+              type="radio"
+              name="sex"
+              defaultValue="female"
+            />
+            <label>Female</label>
+          </div>
         </div>
         <div>
-          <input
-            disabled
-            className="rpgui-radio golden"
-            defaultChecked
-            type="radio"
-            name="sex2"
-            defaultValue="male"
-          />
-          <label>Male</label>
-          <br />
-          <input
-            disabled
-            className="rpgui-radio golden"
-            type="radio"
-            name="sex2"
-            defaultValue="female"
-          />
-          <label>Female</label>
-          <br />
+          <div style={{ marginBottom: 10 }}>
+            <input
+              disabled
+              className="rpgui-radio golden"
+              defaultChecked
+              type="radio"
+              name="sex2"
+              defaultValue="male"
+            />
+            <label>Male</label>
+          </div>
+          <div>
+            <input
+              disabled
+              className="rpgui-radio golden"
+              type="radio"
+              name="sex2"
+              defaultValue="female"
+            />
+            <label>Female</label>
+          </div>
         </div>
-        <br />
         <input
           disabled
           className="rpgui-checkbox"
@@ -150,13 +147,11 @@ const DisableItems = () => {
           defaultChecked
         />
         <label>Checkbox 1.</label>
-        <br />
         <input disabled className="rpgui-checkbox" type="checkbox" />
         <label>Checkbox 2.</label>
         <h1>Dropdown</h1>
         <Dropdown disabled />
-        <br />
-        <h1>List:</h1>
+        <h1 style={{ marginTop: 10 }}>List:</h1>
         <List disabled />
       </div>
       <div style={{ clear: "both" }} />

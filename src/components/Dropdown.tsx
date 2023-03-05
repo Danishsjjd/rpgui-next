@@ -9,10 +9,9 @@ const Dropdown = ({ disabled }: { disabled?: boolean }) => {
         data-rpguitype="dropdown"
         style={{ display: "none" }}
         disabled={disabled}
+        defaultValue={"Warrior"}
       >
-        <option value="Warrior" selected>
-          Warrior
-        </option>
+        <option value="Warrior">Warrior</option>
         <option value="Mage">Mage</option>
         <option value="Rogue">Rogue</option>
         <option value="Ranger">Ranger</option>

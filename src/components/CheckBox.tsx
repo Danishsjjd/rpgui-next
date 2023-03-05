@@ -16,6 +16,7 @@ const CheckBox = ({
         className={`rpgui-checkbox ${className ? className : ""}`}
         type="checkbox"
         checked={isChecked}
+        onChange={() => {}}
       />
       <label onClick={() => setIsChecked((pre) => !pre)}>{children}</label>
     </>

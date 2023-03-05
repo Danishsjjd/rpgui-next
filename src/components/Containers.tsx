@@ -5,7 +5,7 @@ const Containers = () => {
     <div id="containers" className="rpgui-container framed-grey">
       <h1>Containers</h1>
       <hr />
-      <div style={{ display: "flex", gap: 12 }}>
+      <div style={{ display: "flex", gap: 12, marginBottom: 20 }}>
         <div
           className="rpgui-container framed"
           style={{
@@ -15,11 +15,7 @@ const Containers = () => {
             display: "inline-block",
           }}
         >
-          <p>
-            class:
-            <br />
-            rpgui-container framed
-          </p>
+          <p>class: rpgui-container framed</p>
         </div>
         <div
           className="rpgui-container framed-golden"
@@ -30,11 +26,7 @@ const Containers = () => {
             display: "inline-block",
           }}
         >
-          <p>
-            class:
-            <br />
-            rpgui-container framed-golden
-          </p>
+          <p>class: rpgui-container framed-golden</p>
         </div>
         <div
           className="rpgui-container framed-golden-2"
@@ -45,15 +37,9 @@ const Containers = () => {
             display: "inline-block",
           }}
         >
-          <p>
-            class:
-            <br />
-            rpgui-container framed-golden-2
-          </p>
+          <p>class: rpgui-container framed-golden-2</p>
         </div>
       </div>
-      <br />
-      <br />
       <div
         className="rpgui-container framed-grey"
         style={{
@@ -63,11 +49,7 @@ const Containers = () => {
           display: "inline-block",
         }}
       >
-        <p>
-          class:
-          <br />
-          rpgui-container framed-grey
-        </p>
+        <p>class: rpgui-container framed-grey</p>
       </div>
     </div>
   )

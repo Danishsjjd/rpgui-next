@@ -12,18 +12,10 @@ const Header = () => {
         </h2>
       </header>
       {/* button for download */}
-      <div className="rpgui-center">
-        <Button style={{ width: "32%" }}>
-          <p>View on GitHub</p>
-        </Button>
+      <div className="rpgui-center" style={{ marginBottom: 40 }}>
+        <Button style={{ width: "32%" }}>View on GitHub</Button>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <hr style={{ clear: "both" }} />
-      <br />
-      <br />
+      <hr style={{ clear: "both", marginBottom: 30 }} />
     </>
   )
 }

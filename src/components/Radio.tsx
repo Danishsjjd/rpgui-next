@@ -19,6 +19,7 @@ const Radio = ({
         checked={isChecked}
         name={name || "radio"}
         type="radio"
+        onChange={() => {}}
       />
       <label onClick={() => setIsChecked((pre) => !pre)}>{children}</label>
     </>

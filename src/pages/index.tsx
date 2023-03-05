@@ -11,12 +11,16 @@ import Links from "@/components/Links"
 import ProgressBar from "@/components/ProgressBar"
 import RadioBtns from "@/components/RadioBtns"
 import Sliders from "@/components/Sliders"
+import Head from "next/head"
 
 export default function Home() {
   return (
     <>
-      <div id="main"></div>
+      <Head>
+        <title>RPGUI-Next</title>
+      </Head>
       <div
+        id="main"
         className="inner rpgui-container framed"
         style={{ position: "relative" }}
       >
@@ -42,13 +46,11 @@ export default function Home() {
           <ProgressBar />
           <DisableItems />
           <Cursors />
-          <br />
-          <br />
-          <a href="#main" style={{ textAlign: "center", display: "block" }}>
-            - Back to Top -
-          </a>
-          <br />
-          <br />
+          <div style={{ marginTop: 15, marginBottom: 15 }}>
+            <a href="#main" style={{ textAlign: "center", display: "block" }}>
+              - Back to Top -
+            </a>
+          </div>
         </div>
       </div>
     </>

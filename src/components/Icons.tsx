@@ -12,29 +12,71 @@ const Icons = () => {
         not included).
       </p>
       <hr />
-      <div className="rpgui-icon sword" />
-      <div className="rpgui-icon shield" />
-      <div className="rpgui-icon exclamation" />
-      <br />
-      <br />
-      <div className="rpgui-icon potion-red" />
-      <div className="rpgui-icon potion-green" />
-      <div className="rpgui-icon potion-blue" />
-      <br />
-      <br />
-      <div className="rpgui-icon weapon-slot" />
-      <div className="rpgui-icon shield-slot" />
-      <div className="rpgui-icon armor-slot" />
-      <br />
-      <br />
-      <div className="rpgui-icon helmet-slot" />
-      <div className="rpgui-icon ring-slot" />
-      <div className="rpgui-icon potion-slot" />
-      <br />
-      <br />
-      <div className="rpgui-icon magic-slot" />
-      <div className="rpgui-icon shoes-slot" />
-      <div className="rpgui-icon empty-slot" />
+      <div
+        style={{
+          marginBottom: 5,
+          display: "flex",
+          gap: 10,
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div className="rpgui-icon sword" />
+        <div className="rpgui-icon shield" />
+        <div className="rpgui-icon exclamation" />
+      </div>
+      <div
+        style={{
+          marginBottom: 5,
+          display: "flex",
+          gap: 10,
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div className="rpgui-icon potion-red" />
+        <div className="rpgui-icon potion-green" />
+        <div className="rpgui-icon potion-blue" />
+      </div>
+      <div
+        style={{
+          marginBottom: 5,
+          display: "flex",
+          gap: 10,
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div className="rpgui-icon weapon-slot" />
+        <div className="rpgui-icon shield-slot" />
+        <div className="rpgui-icon armor-slot" />
+      </div>
+      <div
+        style={{
+          marginBottom: 5,
+          display: "flex",
+          gap: 10,
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div className="rpgui-icon helmet-slot" />
+        <div className="rpgui-icon ring-slot" />
+        <div className="rpgui-icon potion-slot" />
+      </div>
+      <div
+        style={{
+          marginBottom: 5,
+          display: "flex",
+          gap: 10,
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div className="rpgui-icon magic-slot" />
+        <div className="rpgui-icon shoes-slot" />
+        <div className="rpgui-icon empty-slot" />
+      </div>
     </div>
   )
 }

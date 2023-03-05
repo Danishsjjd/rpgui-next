@@ -11,15 +11,13 @@ const Content = () => {
       <h3>Header 3</h3>
       <h4>Header 4</h4>
       <p>Regular paragraph (p)</p>
-      <span>Span</span>
-      <label>Label</label>
-      <a>Link (a)</a>
-      <br />
-      <br />
+      <div style={{ marginBottom: 14 }}>
+        <span>Span</span>
+        <label>Label</label>
+        <a>Link (a)</a>
+      </div>
       <label>Text input:</label>
-      <input placeholder="first name" />
-      <br />
-      <br />
+      <input placeholder="first name" style={{ marginBottom: 20 }} />
       <label>Textarea:</label>
       <textarea placeholder="write your story here..." defaultValue={""} />
     </div>
