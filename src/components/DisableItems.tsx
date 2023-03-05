@@ -1,4 +1,6 @@
+import { pressStart } from "@/pages/_app"
 import React from "react"
+import Button from "./Button"
 import Dropdown from "./Dropdown"
 import List from "./List"
 import Slider from "./Slider"
@@ -23,6 +25,7 @@ const DisableItems = () => {
           defaultValue="Bob"
           placeholder="Hero name"
           style={{ marginBottom: 15 }}
+          className={pressStart.className}
         />
         <label>Your hero last name:</label>
         <input
@@ -32,6 +35,7 @@ const DisableItems = () => {
           defaultValue="The Destroyer"
           placeholder="Hero last name"
           style={{ marginBottom: 15 }}
+          className={pressStart.className}
         />
         <label>Your hero bio:</label>
         <textarea
@@ -39,6 +43,7 @@ const DisableItems = () => {
           rows={3}
           cols={50}
           defaultValue={"Bob The Destroyer likes to destroy stuff."}
+          className={pressStart.className}
         />
         <h1>Sliders:</h1>
 
@@ -83,7 +88,7 @@ const DisableItems = () => {
           type="button"
           style={{ width: "100%", marginBottom: 15 }}
         >
-          <p>Button</p>
+          <p style={pressStart.style}>Button</p>
         </button>
         <button
           disabled
@@ -91,7 +96,7 @@ const DisableItems = () => {
           type="button"
           style={{ width: "100%", marginBottom: 15 }}
         >
-          <p>Gold Button</p>
+          <p style={pressStart.style}>Gold Button</p>
         </button>
         <h1>Radio/Check</h1>
         <div>
@@ -103,6 +108,7 @@ const DisableItems = () => {
               type="radio"
               name="sex"
               defaultValue="male"
+              style={pressStart.style}
             />
             <label>Male</label>
           </div>
@@ -113,6 +119,7 @@ const DisableItems = () => {
               type="radio"
               name="sex"
               defaultValue="female"
+              style={pressStart.style}
             />
             <label>Female</label>
           </div>
@@ -126,6 +133,7 @@ const DisableItems = () => {
               type="radio"
               name="sex2"
               defaultValue="male"
+              style={pressStart.style}
             />
             <label>Male</label>
           </div>
@@ -136,6 +144,7 @@ const DisableItems = () => {
               type="radio"
               name="sex2"
               defaultValue="female"
+              style={pressStart.style}
             />
             <label>Female</label>
           </div>
@@ -145,9 +154,15 @@ const DisableItems = () => {
           className="rpgui-checkbox"
           type="checkbox"
           defaultChecked
+          style={pressStart.style}
         />
         <label>Checkbox 1.</label>
-        <input disabled className="rpgui-checkbox" type="checkbox" />
+        <input
+          disabled
+          className="rpgui-checkbox"
+          type="checkbox"
+          style={pressStart.style}
+        />
         <label>Checkbox 2.</label>
         <h1>Dropdown</h1>
         <Dropdown disabled />

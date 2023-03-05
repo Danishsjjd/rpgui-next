@@ -1,3 +1,4 @@
+import { pressStart } from "@/pages/_app"
 import { ComponentProps, ReactNode } from "react"
 
 interface InputGroupProps extends ComponentProps<"button"> {
@@ -11,6 +12,7 @@ const Button = ({ children, className, ...props }: InputGroupProps) => {
       className={`rpgui-button ${className ? className : ""}`}
       type={"button"}
       {...props}
+      style={pressStart.style}
     >
       <p>{children}</p>
     </button>

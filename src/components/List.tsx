@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 
 const List = ({ disabled = false }: { disabled?: boolean }) => {
+  const [selected, setSelected] = useState<boolean | string>(false)
   return (
     <>
       <select
@@ -26,31 +27,94 @@ const List = ({ disabled = false }: { disabled?: boolean }) => {
         className=" rpgui-list-imp"
         style={{ height: 140 }}
       >
-        <li data-rpguivalue="Blacksmith" className="">
+        <li
+          data-rpguivalue="Blacksmith"
+          className={`${selected === "Blacksmith" ? "rpgui-selected" : ""}`}
+          onClick={() => {
+            if (disabled) return
+            setSelected("Blacksmith")
+          }}
+        >
           Blacksmith
         </li>
-        <li data-rpguivalue="Merchant" className="">
+        <li
+          data-rpguivalue="Merchant"
+          className={`${selected === "Merchant" ? "rpgui-selected" : ""}`}
+          onClick={() => {
+            if (disabled) return
+            setSelected("Merchant")
+          }}
+        >
           Merchant
         </li>
-        <li data-rpguivalue="City Guard" className="">
+        <li
+          data-rpguivalue="City Guard"
+          className={`${selected === "City Guard" ? "rpgui-selected" : ""}`}
+          onClick={() => {
+            if (disabled) return
+            setSelected("City Guard")
+          }}
+        >
           City Guard
         </li>
-        <li data-rpguivalue="Alchemist" className="">
+        <li
+          data-rpguivalue="Alchemist"
+          className={`${selected === "Alchemist" ? "rpgui-selected" : ""}`}
+          onClick={() => {
+            if (disabled) return
+            setSelected("Alchemist")
+          }}
+        >
           Alchemist
         </li>
-        <li data-rpguivalue="Explorer" className="">
+        <li
+          data-rpguivalue="Explorer"
+          className={`${selected === "Explorer" ? "rpgui-selected" : ""}`}
+          onClick={() => {
+            if (disabled) return
+            setSelected("Explorer")
+          }}
+        >
           Explorer
         </li>
-        <li data-rpguivalue="Thug" className="">
+        <li
+          data-rpguivalue="Thug"
+          className={`${selected === "Thug" ? "rpgui-selected" : ""}`}
+          onClick={() => {
+            if (disabled) return
+            setSelected("Thug")
+          }}
+        >
           Thug
         </li>
-        <li data-rpguivalue="Mercenary" className="">
+        <li
+          data-rpguivalue="Mercenary"
+          className={`${selected === "Mercenary" ? "rpgui-selected" : ""}`}
+          onClick={() => {
+            if (disabled) return
+            setSelected("Mercenary")
+          }}
+        >
           Mercenary
         </li>
-        <li data-rpguivalue="Royalty" className="">
+        <li
+          data-rpguivalue="Royalty"
+          className={`${selected === "Royalty" ? "rpgui-selected" : ""}`}
+          onClick={() => {
+            if (disabled) return
+            setSelected("Royalty")
+          }}
+        >
           Royalty
         </li>
-        <li data-rpguivalue="Gladiator" className="">
+        <li
+          data-rpguivalue="Gladiator"
+          className={`${selected === "Gladiator" ? "rpgui-selected" : ""}`}
+          onClick={() => {
+            if (disabled) return
+            setSelected("Gladiator")
+          }}
+        >
           Gladiator
         </li>
       </ul>

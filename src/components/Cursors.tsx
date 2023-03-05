@@ -1,3 +1,4 @@
+import { pressStart } from "@/pages/_app"
 import React from "react"
 
 const Cursors = () => {
@@ -9,35 +10,35 @@ const Cursors = () => {
       <button
         type="button"
         className="rpgui-button rpgui-cursor-default"
-        style={{ width: "30%" }}
+        style={{ width: "30%", ...pressStart.style }}
       >
         <p>Default</p>
       </button>
       <button
         type="button"
         className="rpgui-button rpgui-cursor-point"
-        style={{ width: "30%" }}
+        style={{ width: "30%", ...pressStart.style }}
       >
         <p>Pointer</p>
       </button>
       <button
         type="button"
         className="rpgui-button rpgui-cursor-select"
-        style={{ width: "30%" }}
+        style={{ width: "30%", ...pressStart.style }}
       >
         <p>Text Select</p>
       </button>
       <button
         type="button"
         className="rpgui-button rpgui-cursor-grab-open"
-        style={{ width: "30%" }}
+        style={{ width: "30%", ...pressStart.style }}
       >
         <p>Grab Open</p>
       </button>
       <button
         type="button"
         className="rpgui-button rpgui-cursor-grab-close"
-        style={{ width: "30%" }}
+        style={{ width: "30%", ...pressStart.style }}
       >
         <p>Grab Close</p>
       </button>

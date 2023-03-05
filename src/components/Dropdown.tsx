@@ -1,7 +1,9 @@
+import { pressStart } from "@/pages/_app"
 import React, { useState } from "react"
 
 const Dropdown = ({ disabled }: { disabled?: boolean }) => {
   const [isOpen, setIsOpen] = useState(false)
+  const [selected, setSelected] = useState("Warrior")
   return (
     <>
       <select
@@ -20,7 +22,7 @@ const Dropdown = ({ disabled }: { disabled?: boolean }) => {
         className=" rpgui-dropdown-imp rpgui-dropdown-imp-header"
         onClick={() => (disabled ? null : setIsOpen((pre) => !pre))}
       >
-        <label>▼</label> Warrior
+        <label style={{ fontSize: 6 }}>▼</label> {selected}
       </p>
       <ul
         className=" rpgui-dropdown-imp"
@@ -30,10 +32,38 @@ const Dropdown = ({ disabled }: { disabled?: boolean }) => {
           display: isOpen ? "block" : "none",
         }}
       >
-        <li>Warrior</li>
-        <li>Mage</li>
-        <li>Rogue</li>
-        <li>Ranger</li>
+        <li
+          onClick={() => {
+            setSelected("Warrior")
+            setIsOpen(false)
+          }}
+        >
+          Warrior
+        </li>
+        <li
+          onClick={() => {
+            setSelected("Mage")
+            setIsOpen(false)
+          }}
+        >
+          Mage
+        </li>
+        <li
+          onClick={() => {
+            setSelected("Rogue")
+            setIsOpen(false)
+          }}
+        >
+          Rogue
+        </li>
+        <li
+          onClick={() => {
+            setSelected("Ranger")
+            setIsOpen(false)
+          }}
+        >
+          Ranger
+        </li>
       </ul>
     </>
   )

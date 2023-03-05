@@ -1,3 +1,4 @@
+import CustomSlider from "./CustomSlider"
 import Slider from "./Slider"
 
 const Sliders = () => {
@@ -11,10 +12,9 @@ const Sliders = () => {
       <hr />
       <div style={{ width: "60%", marginLeft: "20%" }}>
         <label>Slider:</label>
-        <Slider />
-
+        <CustomSlider />
         <label>Golden slider:</label>
-        <Slider className="golden" />
+        <CustomSlider golden />
       </div>
     </div>
   )

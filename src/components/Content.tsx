@@ -1,3 +1,4 @@
+import { pressStart } from "@/pages/_app"
 import React from "react"
 
 const Content = () => {
@@ -17,9 +18,17 @@ const Content = () => {
         <a>Link (a)</a>
       </div>
       <label>Text input:</label>
-      <input placeholder="first name" style={{ marginBottom: 20 }} />
+      <input
+        placeholder="first name"
+        style={{ marginBottom: 20 }}
+        className={pressStart.className}
+      />
       <label>Textarea:</label>
-      <textarea placeholder="write your story here..." defaultValue={""} />
+      <textarea
+        placeholder="write your story here..."
+        defaultValue={""}
+        style={pressStart.style}
+      />
     </div>
   )
 }

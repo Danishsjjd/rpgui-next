@@ -12,6 +12,7 @@ import ProgressBar from "@/components/ProgressBar"
 import RadioBtns from "@/components/RadioBtns"
 import Sliders from "@/components/Sliders"
 import Head from "next/head"
+import Image from "next/image"
 
 export default function Home() {
   return (
